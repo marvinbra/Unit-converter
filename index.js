@@ -1,9 +1,9 @@
 
 const convertBtn = document.getElementById("convert-btn")
 let inputEl = document.getElementById("input-el")
-let convertionOne = document.getElementById("convertationOne")
-let convertionTwo = document.getElementById("convertationTwo")
-let convertionThree = document.getElementById("convertationThree")
+const convertionOne = document.getElementById("convertationOne")
+const convertionTwo = document.getElementById("convertationTwo")
+const convertionThree = document.getElementById("convertationThree")
 let arr = []
 
 
@@ -23,6 +23,5 @@ convertBtn.addEventListener("click", function(){
     resultSix = arr / 2.204
     convertionThree.innerHTML = `<p>${arr} kilos = ${resultFive.toFixed(3)} pounds |
                                 ${arr} pounds = ${resultSix.toFixed(3)} kilos`
-
 }) 
 
