@@ -8,6 +8,14 @@ let arr = []
 
 
 convertBtn.addEventListener("click", function(){
+    convert()
+    clearInputValue()
+    clearInputField()
+}) 
+
+
+function convert() {
+
     arr.push(inputEl.value) 
     resultOne = arr * 3.281
     resultTwo = arr / 3.281 
@@ -23,5 +31,12 @@ convertBtn.addEventListener("click", function(){
     resultSix = arr / 2.204
     convertionThree.innerHTML = `<p>${arr} kilos = ${resultFive.toFixed(3)} pounds |
                                 ${arr} pounds = ${resultSix.toFixed(3)} kilos`
-}) 
+}
 
+function clearInputField() {
+    inputEl.value = ""
+}
+
+function clearInputValue() {
+    arr = []
+}
